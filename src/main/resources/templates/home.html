@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/home-html.css">
+</head>
+<body>
+
+    <div>
+        <img  class="img-style" src="img/yall-means-all-nobg.png" alt="rainbow">
+    </div>
+
+    <div sec:authorize="isAuthenticated()">
+        This content is only shown to authenticated users.
+
+        User ID: <span th:text="${#authentication.principal.id}"/>
+        Username: <span th:text="${#authentication.principal.username}"/>
+        Email: <span th:text="${#authentication.principal.email}"/>
+    </div>
+
+</body>
+</html>

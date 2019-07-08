@@ -1,4 +1,4 @@
-package com.codeup.springblog;
+package com.codeup.springblog.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ public class PostController {
 
     @GetMapping(path = "/posts/{id}")
     @ResponseBody
-    public String shwo(@PathVariable long id){
+    public String show(@PathVariable long id){
         return "showing posts from user:"+id;
     }
 
@@ -27,7 +27,7 @@ public class PostController {
     @PostMapping(path = "/posts/create")
     @ResponseBody
     public void insert(){
-
     }
+
 
 }

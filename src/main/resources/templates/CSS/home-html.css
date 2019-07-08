@@ -1,0 +1,10 @@
+body{
+    background-color: lightskyblue;
+    text-align: center;
+}
+.img-style{
+    /*position: center;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
