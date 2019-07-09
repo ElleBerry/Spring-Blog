@@ -1,7 +1,8 @@
 package com.codeup.springblog.controllers.services;
 
-//import org.apache.tomcat.jni.User;
+import com.codeup.springblog.models.User;
 import com.codeup.springblog.models.UserWithRoles;
+import com.codeup.springblog.repos.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service

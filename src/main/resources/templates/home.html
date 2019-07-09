@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="CSS/home-html.css">
+
 </head>
 <body>
+
+    <nav th:replace="partials :: navbar" />
+
+
 
     <div>
         <img  class="img-style" src="img/yall-means-all-nobg.png" alt="rainbow">
@@ -20,5 +25,6 @@
         Email: <span th:text="${#authentication.principal.email}"/>
     </div>
 
+<
 </body>
 </html>

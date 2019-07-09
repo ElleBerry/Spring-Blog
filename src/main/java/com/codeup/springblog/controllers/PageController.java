@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Arrays;
 
-private EmailService emSvc;
+//private EmailService emSvc;
 
 @Controller
 public class PageController {
@@ -30,9 +30,9 @@ public class PageController {
        return "thyme";
     }
 
-    @GetMapping("test-services/{str}")
-    @ResponseBody
-    public String testService(@PathVariable String str){
-        return emSvc.sendEmail(str);
-    }
+//    @GetMapping("test-services/{str}")
+//    @ResponseBody
+//    public String testService(@PathVariable String str){
+//        return emSvc.sendEmail(str);
+//    }
 }
