@@ -16,6 +16,14 @@
             <p th:text="${post.body}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium alias aliquid architecto eligendi, excepturi explicabo libero maiores non numquam quae recusandae, sapiente suscipit, unde vero voluptatibus! Officiis, temporibus.</p>
         </div>
     </th:block>
+<!--    <div>-->
+<!--        <ul>-->
+<!--            <li th:each="item : ${posts}">-->
+<!--                <a th:href="@{'/posts/'+${item.getId()}}"> <h3 th:text="${item.title}"></h3></a>-->
+<!--                <p th:text="${item.body}"></p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
 </main>
 
 <th:block th:include="partials/scripts :: scripts" />
